@@ -8,9 +8,7 @@ public class Test_freeConsult extends BaseClass {
     public static void main(String[] args) throws InterruptedException {
        driver.get("https://odessa.ithillel.ua/");
                 System.out.println("Title name is: "+driver.getTitle());
-        driver.navigate().refresh();
-        System.out.println(driver.getCurrentUrl());
-// click button
+             // click button
         driver.findElement(By.id("btn-consultation-hero")).click();
         // fill name
        driver.findElement(By.id("input-name-consultation")).click();
@@ -37,12 +35,12 @@ public class Test_freeConsult extends BaseClass {
 
         //checkbox
         driver.findElement(By.xpath("//span[@class='checkbox_checkmark']")).click();
-        //choose time
-     driver.findElement(By.id("listbox-btn-input-consultation-consultation-time")).click();
-     driver.findElement(By.xpath("//li[@data-value='1687878000']")).click();
-
-
-        Thread.sleep (10000);
+        //choose time{
+        if (driver.findElement(By.id("listbox-btn-input-consultation-consultation-time")).isDisplayed())
+            driver.findElement(By.id("listbox-btn-input-consultation-consultation-time")).click();
+  //  driver.findElement(By.xpath("//li[@data-value='1687878000']")).click();
+else
+       // Thread.sleep (5000);
         driver.quit();
     }
 

@@ -48,17 +48,6 @@ public static WebDriver createdriver(Webdrivers webdrivers) {
     }
 
 
-//    ChromeOptions options = new ChromeOptions();
-//      options.addArguments("--remote-allow-origins=*");
-//      options.addArguments("--start-maximized");
-//    //  options.addArguments("--incognito");
-//    WebDriver driver = new ChromeDriver(options);
-//      driver.get("https://odessa.ithillel.ua/");
-//        System.out.println("Title name is: "+driver.getTitle());
-//        Thread.sleep(3000);
-//        driver.findElement(By.id("btn-consultation-hero"));
-//
-//           driver.quit();
 
 }
 

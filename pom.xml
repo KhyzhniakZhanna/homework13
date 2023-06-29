@@ -28,7 +28,7 @@
             <artifactId>selenium-chrome-driver</artifactId>
             <version>4.8.1</version>
         </dependency>
-    </dependencies>
+            </dependencies>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
